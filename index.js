@@ -11,8 +11,8 @@ const server = express()
 server.use(cors());
 server.use(express.json());
 server.use('/api',(req,res,next)=>{
-    console.log("Hicieron una peticion a mi servidor a la ruta "+req.url+
-    " de tipo "+req.method+", desde la direccion "+req.get('Origin')+" a la hora "+new Date().toLocaleString())
+    console.log("Hicieron una peticion a mi servidor a la ruta "+ req.url +
+    " de tipo "+ req.method+", desde la direccion "+ req.get('Origin')+" a la hora "+ new Date().toLocaleString())
     next();
 },indexRouter);
 
