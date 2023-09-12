@@ -5,7 +5,7 @@ const {getAllItineraries, getOneItinerary,createOneItinerary, updateOneItinerary
 
 itinerariesRouter.get('/', getAllItineraries)
 itinerariesRouter.get('/:id', getOneItinerary)
-// estos sigientes 3 van a tener que tener un middleware despues 
+
 itinerariesRouter.post('/', createOneItinerary)
 itinerariesRouter.put('/:id', updateOneItinerary)
 itinerariesRouter.delete('/:id', deleteOneItinerary)

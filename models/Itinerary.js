@@ -2,7 +2,7 @@ import { Schema, model, Types } from "mongoose";
 import mongoose from "mongoose";
 
 const itinerariesSchema = Schema({
-    titulo:{type: 'string', required: true},
+    title:{type: 'string', required: true},
     name:{type: 'string', required: true},
     photo:{type: 'string', required: true},
     duration:{type: 'number', required: true},
